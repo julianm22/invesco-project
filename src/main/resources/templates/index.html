@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="layouts :: header">
+    <title>Home</title>
+</head>
+<body>
+<h3> Private Market Investment Directory </h3>
+<hr>
+<a th:href="@{/pmi/new}" class="btn btn-primary btn-sm mb-3">
+    New PMI +
+</a>
+<table class="table table-striped">
+    <thead>
+    <tr>
+        <th scope="col"> Investment Id </th>
+        <th scope="col"> Region </th>
+        <th scope="col"> Office </th>
+        <th scope="col"> Registration Received </th>
+        <th scope="col"> Investment Name </th>
+        <th scope="col"> Deal Status </th>
+        <th scope="col"> City </th>
+        <th scope="col"> State </th>
+        <th scope="col"> Deal Source </th>
+        <th scope="col"> Acquisition Officer </th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="pmi : ${pmiList}">
+        <td th:text="${pmi.investmentId}"></td>
+        <td th:text="${pmi.region}"></td>
+        <td th:text="${pmi.office}"></td>
+        <td th:text="${pmi.registrationReceived}"></td>
+        <td th:text="${pmi.investmentName}"></td>
+        <td th:text="${pmi.dealStatus}"></td>
+        <td th:text="${pmi.state}"></td>
+        <td th:text="${pmi.dealSource}"></td>
+        <td th:text="${pmi.acquisitionOfficer}"></td>
+    </tr>
+    </tbody>
+</table>
+</div>
+</body>
+</html>

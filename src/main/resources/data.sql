@@ -1,0 +1,4 @@
+insert into private_market_investment (investment_id, region, office, registration_received, investment_name, deal_status, city, state, deal_source, acquisition_officer) values (234110, 'EUROPE', 'London', '1/18/18', 'Sutton Court Road', 'Pre-Review', 'London', 'filler', 'Direct', 'Edgar, Alicia');
+insert into private_market_investment (investment_id, region, office, registration_received, investment_name, deal_status, city, state, deal_source, acquisition_officer) values (234111, 'EUROPE', 'London', '1/18/18', 'Sutton Court Road', 'Pre-Review', 'London', 'filler', 'Direct', 'Edgar, Alicia');
+insert into private_market_investment (investment_id, region, office, registration_received, investment_name, deal_status, city, state, deal_source, acquisition_officer) values (234112, 'EUROPE', 'London', '1/18/18', 'Sutton Court Road', 'Pre-Review', 'London', 'filler', 'Direct', 'Edgar, Alicia');
+
